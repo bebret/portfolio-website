@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- SEO -->
+  <meta name="description"
+    content="Projects by [Your Name] — Frontend, UI/UX, Laravel, and AI web applications. Explore live demos and interactive Figma prototypes.">
+  <meta property="og:title" content="Projects — [Your Name]">
+  <meta property="og:description" content="Explore my frontend, backend, UI/UX, and AI projects.">
+  <meta property="og:type" content="website">
+  <title>Projects — [Your Name]</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- =====================================================
+       NAVBAR
+  ====================================================== -->
+  <nav class="navbar" id="navbar" aria-label="Main navigation">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo" aria-label="Home">Albert Jonathan Aditya Nugroho<span>.</span></a>
+      <ul class="navbar-menu" id="navbar-menu" role="menubar">
+        <li role="none"><a href="index.html" class="nav-link" role="menuitem">Home</a></li>
+        <li role="none"><a href="index.html#experience" class="nav-link" role="menuitem">Experience</a></li>
+        <li role="none"><a href="projects.html" class="nav-link" role="menuitem">Projects</a></li>
+        <li role="none"><a href="index.html#certifications" class="nav-link" role="menuitem">Certificates</a></li>
+        <li role="none"><a href="contact.html" class="nav-link nav-cta" role="menuitem">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+
+  <!-- =====================================================
+       PAGE HERO
+  ====================================================== -->
+  <header class="page-hero" aria-labelledby="page-title">
+    <div class="page-hero-blob page-hero-blob-1" aria-hidden="true"></div>
+    <div class="page-hero-blob page-hero-blob-2" aria-hidden="true"></div>
+    <div class="page-hero-content">
+      <p class="page-hero-label reveal">My Work</p>
+      <h1 class="page-hero-title reveal delay-1" id="page-title">Selected Projects</h1>
+      <p class="page-hero-desc reveal delay-2">
+        A showcase of things I've built — from AI-powered web apps and Laravel backends
+        to interactive Figma prototypes and polished frontends.
+      </p>
+    </div>
+  </header>
+
+
+  <!-- =====================================================
+       PROJECTS GRID
+  ====================================================== -->
+  <main class="projects-section" id="projects">
+    <div class="projects-inner">
+
+      <!-- Filter Buttons -->
+      <nav class="projects-filter" aria-label="Filter projects">
+        <button class="filter-btn active" data-filter="all" id="filter-all">All</button>
+        <button class="filter-btn" data-filter="ai" id="filter-ai">AI / ML</button>
+        <button class="filter-btn" data-filter="frontend" id="filter-frontend">Frontend</button>
+        <button class="filter-btn" data-filter="backend" id="filter-backend">Backend</button>
+        <button class="filter-btn" data-filter="uiux" id="filter-uiux">UI / UX</button>
+        <button class="filter-btn" data-filter="cms" id="filter-cms">WordPress / CMS</button>
+      </nav>
+
+
+      <div class="projects-grid">
+
+        <!-- ─── PROJECT 1: AI Skin Disease Detector ─── -->
+        <article class="project-card reveal delay-1" data-category="ai backend" id="project-ai-skin">
+          <div class="project-preview">
+            <iframe src="https://bewbred-skin-disease-classifier.hf.space" title="AI Skin Disease Detector Live Demo"
+              style="border: none; width: 100%; height: 100%;" allow="camera; microphone; geolocation" allowfullscreen>
+            </iframe>
+          </div>
+
+          <div class="project-info">
+            <p class="project-category">AI / Machine Learning</p>
+            <h2 class="project-title">AI Skin Disease Detector</h2>
+            <p class="project-desc">
+              A web application that uses a trained machine learning model to detect and
+              classify skin diseases from uploaded images in real time. Hosted on Hugging Face Spaces.
+            </p>
+            <div class="project-tech" aria-label="Technologies used">
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">AI / ML</span>
+              <span class="tech-badge">Hugging Face</span>
+              <span class="tech-badge">HTML / CSS</span>
+              <span class="tech-badge">JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="https://bewbred-skin-disease-classifier.hf.space" target="_blank" rel="noopener noreferrer"
+                class="btn btn-primary btn-sm" id="ai-skin-cta-live">
+                <i class="fa-solid fa-up-right-from-square" aria-hidden="true"></i> Live Demo
+              </a>
+              <a href="https://github.com/bebret/Skin-Disease-Classifier" target="_blank" rel="noopener noreferrer"
+                class="btn btn-secondary btn-sm" id="ai-skin-cta-source">
+                <i class="fa-brands fa-github" aria-hidden="true"></i> Source Code
+              </a>
+            </div>
+          </div>
+        </article>
+
+
+        <!-- ─── PROJECT 2: Laravel Web Application ─── -->
+        <article class="project-card reveal delay-2" data-category="backend" id="project-laravel">
+          <div class="project-preview">
+            <div class="project-preview-placeholder" aria-label="Laravel web app preview">
+              <i class="fa-solid fa-database" aria-hidden="true"></i>
+              <p>Laravel web application.<br>Add a live URL or screenshot here.</p>
+            </div>
+          </div>
+
+          <div class="project-info">
+            <p class="project-category">Backend Development</p>
+            <h2 class="project-title">Laravel Web Application</h2>
+            <p class="project-desc">
+              A full-featured web application built with the Laravel PHP framework,
+              featuring user authentication, role-based access control, CRUD operations,
+              and a clean responsive UI using Blade templates.
+            </p>
+            <div class="project-tech" aria-label="Technologies used">
+              <span class="tech-badge">Laravel</span>
+              <span class="tech-badge">PHP</span>
+              <span class="tech-badge">MySQL</span>
+              <span class="tech-badge">Blade</span>
+              <span class="tech-badge">Eloquent</span>
+            </div>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm"
+                id="laravel-cta-live">
+                <i class="fa-solid fa-up-right-from-square" aria-hidden="true"></i> Live Demo
+              </a>
+              <a href="https://github.com/bebret" target="_blank" rel="noopener noreferrer"
+                class="btn btn-secondary btn-sm" id="laravel-cta-source">
+                <i class="fa-brands fa-github" aria-hidden="true"></i> Source Code
+              </a>
+            </div>
+          </div>
+        </article>
+
+
+        <!-- ─── PROJECT 3: Frontend Project ─── -->
+        <article class="project-card reveal delay-1" data-category="frontend" id="project-frontend">
+          <div class="project-preview">
+            <iframe src="https://final-project-bncc-gamma.vercel.app/" title="Frontend Project Live Demo"
+              style="border: none; width: 100%; height: 100%;" allowfullscreen>
+            </iframe>
+          </div>
+
+          <div class="project-info">
+            <p class="project-category">Frontend Development</p>
+            <h2 class="project-title">BNCC Web Project</h2>
+            <p class="project-desc">
+              A responsive frontend web project hosted on Vercel showcasing modern UI design,
+              interactive components, clean layout structures, and seamless performance.
+            </p>
+            <div class="project-tech" aria-label="Technologies used">
+              <span class="tech-badge">Vercel</span>
+              <span class="tech-badge">HTML</span>
+              <span class="tech-badge">CSS</span>
+              <span class="tech-badge">JavaScript</span>
+              <span class="tech-badge">Responsive</span>
+            </div>
+            <div class="project-links">
+              <a href="https://final-project-bncc-gamma.vercel.app/" target="_blank" rel="noopener noreferrer"
+                class="btn btn-primary btn-sm" id="frontend-cta-live">
+                <i class="fa-solid fa-up-right-from-square" aria-hidden="true"></i> Live Demo
+              </a>
+              <a href="https://github.com/bebret/FinalProjectBNCC" target="_blank" rel="noopener noreferrer"
+                class="btn btn-secondary btn-sm" id="frontend-cta-source">
+                <i class="fa-brands fa-github" aria-hidden="true"></i> Source Code
+              </a>
+            </div>
+          </div>
+        </article>
+
+
+        <!-- ─── PROJECT 4: Figma Mobile App Design ─── -->
+        <article class="project-card reveal delay-2" data-category="uiux" id="project-figma-mobile">
+
+          <div class="project-preview">
+            <iframe
+              src="https://embed.figma.com/proto/BmOnHNVkDHRdFvFPzgkr3t/TekGoHo-Mobile-Prototype?node-id=23-140&starting-point-node-id=23%3A169&embed-host=share"
+              width="100%" height="100%" style="border: none; width: 100%; height: 100%;" allowfullscreen
+              title="TekGoHo Mobile App Figma Prototype">
+            </iframe>
+          </div>
+
+          <div class="project-info">
+            <p class="project-category">UI / UX Design</p>
+            <h2 class="project-title">Mobile App UI/UX Design</h2>
+            <p class="project-desc">
+              A complete mobile application design — from initial wireframes and
+              user flows to a high-fidelity, interactive Figma prototype. The design
+              system includes custom components, a cohesive color palette, and
+              platform-specific interaction patterns for mobile application.
+            </p>
+            <div class="project-tech" aria-label="Technologies used">
+              <span class="tech-badge">Figma</span>
+              <span class="tech-badge">UI Design</span>
+              <span class="tech-badge">Prototyping</span>
+              <span class="tech-badge">Design System</span>
+              <span class="tech-badge">Mobile UX</span>
+            </div>
+
+            <!-- Figma embed note for visitors -->
+            <div class="figma-embed-note" role="note">
+              <strong>Interactive Prototype:</strong> Click "Open in Figma" to explore
+              the full interactive prototype with all screens and transitions in the
+              Figma viewer.
+            </div>
+
+            <div class="project-links" style="margin-top: 1.25rem;">
+              <!-- ★ Replace # with your actual Figma prototype share link -->
+              <a href="https://www.figma.com/proto/BmOnHNVkDHRdFvFPzgkr3t/TekGoHo-Mobile-Prototype?node-id=8-11&starting-point-node-id=23%3A169&t=gbD1SWDaHjrYgfaM-1"
+                target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" id="figma-cta-open">
+                <i class="fa-brands fa-figma" aria-hidden="true"></i> Open Prototype
+              </a>
+            </div>
+          </div>
+
+        </article>
+
+
+        <!-- ─── PROJECT 5: New UI/UX Web/Mobile Design ─── -->
+        <article class="project-card reveal delay-1" data-category="uiux" id="project-uiux-2">
+
+          <div class="project-preview">
+            <!-- Option A: Embedded Figma Prototype -->
+            <iframe
+              src="https://embed.figma.com/proto/eSXh0RLHJuiWZOi0dEVrtb/NeuroLearn?scaling=scale-down&content-scaling=fixed&page-id=0%3A1&node-id=20-489&starting-point-node-id=20%3A489&embed-host=share"
+              width="100%" height="100%" style="border: none; width: 100%; height: 100%;" allowfullscreen
+              title="UI/UX Prototype Preview">
+            </iframe>
+
+            <!-- Option B (Alternative): If you have an image screenshot instead, replace the iframe above with: -->
+            <!--
+            <img src="images/your-uiux-screenshot.jpg" alt="UI/UX Project Preview" style="width:100%; height:100%; object-fit:cover;">
+            -->
+          </div>
+
+          <div class="project-info">
+            <p class="project-category">UI / UX Design</p>
+            <h2 class="project-title">Learning Application</h2>
+            <p class="project-desc">
+              A modern design revamp focusing on improving user conversion rates, streamlining
+              the checkout experience, and building an accessible visual system across mobile and desktop interfaces.
+            </p>
+            <div class="project-tech" aria-label="Technologies used">
+              <span class="tech-badge">Figma</span>
+              <span class="tech-badge">User Research</span>
+              <span class="tech-badge">Wireframing</span>
+              <span class="tech-badge">Design System</span>
+              <span class="tech-badge">Desktop & Mobile</span>
+            </div>
+
+            <div class="figma-embed-note" role="note">
+              <strong>Interactive Prototype:</strong> Explore the Figma prototype or case study details.
+            </div>
+
+            <div class="project-links" style="margin-top: 1.25rem;">
+              <a href="https://www.figma.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm"
+                id="figma-cta-open-2">
+                <i class="fa-brands fa-figma" aria-hidden="true"></i> Open Prototype
+              </a>
+            </div>
+          </div>
+
+        </article>
+        <!-- ─── PROJECT 5: New UI/UX Web/Mobile Design ─── -->
+        <article class="project-card reveal delay-1" data-category="uiux" id="project-uiux-2">
+
+          <div class="project-preview">
+            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450"
+              src="https://embed.figma.com/proto/U6NNRBBu4EBHpJa63Zgvd9/pace?node-id=3-3&p=f&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=3%3A3&show-proto-sidebar=1&embed-host=share"
+              allowfullscreen></iframe>
+          </div>
+
+          <div class="project-info">
+            <p class="project-category">UI / UX Design</p>
+            <h2 class="project-title">Pacefuly</h2>
+            <p class="project-desc">
+              Pacefuly is a neuroinclusive productivity
+              app designed to beat task paralysis by automatically breaking overwhelming tasks into tiny micro-steps and
+              offering calming, customizable focus environments. By pairing real-time facial expression analysis for
+              gentle emotional check-ins with non-jarring sensory timers and a guilt-free reward system, it transforms
+              traditional task management into a supportive digital companion.
+            </p>
+            <div class="project-tech" aria-label="Technologies used">
+              <span class="tech-badge">Figma</span>
+              <span class="tech-badge">User Research</span>
+              <span class="tech-badge">Wireframing</span>
+              <span class="tech-badge">Design System</span>
+              <span class="tech-badge">Desktop & Mobile</span>
+            </div>
+
+            <div class="figma-embed-note" role="note">
+              <strong>Interactive Prototype:</strong> Explore the Figma prototype or case study details.
+            </div>
+
+            <div class="project-links" style="margin-top: 1.25rem;">
+              <a href="https://www.figma.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm"
+                id="figma-cta-open-2">
+                <i class="fa-brands fa-figma" aria-hidden="true"></i> Open Prototype
+              </a>
+            </div>
+          </div>
+
+        </article>
+
+
+        <!-- ─── PROJECT 6: Gadai Sertifikat Web Management ─── -->
+        <article class="project-card reveal delay-2" data-category="backend frontend cms" id="project-gadai-sertifikat">
+
+          <div class="project-preview">
+            <iframe src="https://gadaisertifikat.com" title="Gadai Sertifikat Live Website"
+              style="border: none; width: 100%; height: 100%;" allowfullscreen>
+            </iframe>
+          </div>
+
+          <div class="project-info">
+            <p class="project-category">Website Management & CMS</p>
+            <h2 class="project-title">Gadai Sertifikat — Web Management</h2>
+            <p class="project-desc">
+              Ongoing professional website management project for Gadai Sertifikat. Responsible for full site
+              administration, performance optimization, security monitoring, theme & plugin maintenance, content
+              management, and hosting operations on Hostinger infrastructure.
+            </p>
+            <div class="project-tech" aria-label="Technologies used">
+              <span class="tech-badge">WordPress</span>
+              <span class="tech-badge">Hostinger</span>
+              <span class="tech-badge">Web Management</span>
+              <span class="tech-badge">PHP</span>
+              <span class="tech-badge">MySQL</span>
+              <span class="tech-badge">SEO</span>
+            </div>
+
+            <div class="project-links">
+              <a href="https://gadaisertifikat.com" target="_blank" rel="noopener noreferrer"
+                class="btn btn-primary btn-sm" id="gadai-sertifikat-cta-live">
+                <i class="fa-solid fa-up-right-from-square" aria-hidden="true"></i> Visit Website
+              </a>
+            </div>
+          </div>
+
+        </article>
+
+      </div><!-- /projects-grid -->
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-inner">
+      <a href="index.html" class="footer-logo" aria-label="Home">Albert Jonathan Aditya Nugroho<span>.</span></a>
+      <p class="footer-copy">© 2026 Albert Jonatha Aditya Nugroho. All rights reserved.</p>
+      <nav class="footer-links" aria-label="Footer links">
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="https://github.com/bebret" target="_blank" rel="noopener noreferrer"
+          aria-label="GitHub profile">GitHub</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

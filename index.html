@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- SEO -->
+  <meta name="description"
+    content="Portfolio of [Your Name] — Frontend Developer, UI/UX Designer, Backend Engineer, and AI Application Builder.">
+  <meta name="keywords" content="frontend developer, UI/UX designer, Laravel, backend, portfolio, web developer">
+  <meta property="og:title" content="[Your Name] — Portfolio">
+  <meta property="og:description" content="Frontend Developer, UI/UX Designer & Backend Engineer">
+  <meta property="og:type" content="website">
+  <title>Albert Jonathan Aditya Nugroho — Portfolio</title>
+
+  <!-- Google Fonts (Outfit — Campeno fallback until you add font files) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome 6 (icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar" aria-label="Main navigation">
+    <div class="navbar-inner">
+      <!-- Logo — replace [Your Name] with your actual name -->
+      <a href="index.html" class="navbar-logo" aria-label="Home">Albert Jonatha Aditya Nugroho<span>.</span></a>
+
+      <ul class="navbar-menu" id="navbar-menu" role="menubar">
+        <li role="none"><a href="index.html" class="nav-link" role="menuitem">Home</a></li>
+        <li role="none"><a href="#experience" class="nav-link" role="menuitem">Experience</a></li>
+        <li role="none"><a href="projects.html" class="nav-link" role="menuitem">Projects</a></li>
+        <li role="none"><a href="#certifications" class="nav-link" role="menuitem">Certificates</a></li>
+        <li role="none"><a href="contact.html" class="nav-link nav-cta" role="menuitem">Contact</a></li>
+      </ul>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="hero" aria-labelledby="hero-name">
+
+    <!-- Animated background blobs -->
+    <div class="hero-blob hero-blob-1" aria-hidden="true"></div>
+    <div class="hero-blob hero-blob-2" aria-hidden="true"></div>
+    <div class="hero-blob hero-blob-3" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <p class="hero-greeting" aria-hidden="true">Hello, World 👋</p>
+
+      <h1 class="hero-name" id="hero-name">
+        <span class="name-solid">Albert</span>
+        <span class="name-outline">Jonathan Aditya Nugroho</span>
+      </h1>
+
+      <p class="hero-role" aria-label="I am a frontend developer, UI/UX designer, and more">
+        I'm a&nbsp;<span class="typewriter-text" aria-live="polite">Frontend Developer</span><span class="cursor"
+          aria-hidden="true"></span>
+      </p>
+
+      <div class="hero-buttons">
+        <a href="projects.html" class="btn btn-primary" id="hero-cta-projects">
+          <i class="fa-solid fa-folder-open" aria-hidden="true"></i>
+          View My Work
+        </a>
+        <a href="contact.html" class="btn btn-secondary" id="hero-cta-contact">
+          <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+          Get In Touch
+        </a>
+      </div>
+    </div>
+
+
+
+  </section>
+
+
+  <!-- ABOUT SECTION -->
+  <section class="about" id="about" aria-labelledby="about-title">
+    <div class="about-inner container">
+
+      <!-- Image column -->
+      <div class="about-image-wrapper reveal-left">
+        <div class="about-image-frame">
+          <!--
+            ★ ADD YOUR PHOTO:
+              Replace the <div class="about-img-placeholder"> block below with:
+              <img src="assets/profile.jpg" alt="[Your Name]">
+              (create an assets/ folder and put your photo there)
+          -->
+          <div class="about-img-placeholder" aria-label="Profile photo placeholder">
+            <i class="fa-solid fa-user" aria-hidden="true"></i>
+            <p>Add your photo here</p>
+          </div>
+        </div>
+        <!-- <div class="about-frame-deco" aria-hidden="true"></div>
+        <div class="about-badge" aria-label="Years of experience">
+          <div class="badge-num">4+</div>
+          <div class="badge-lbl">Years Experience</div>
+        </div> -->
+      </div>
+
+      <!-- Text column -->
+      <div class="about-content reveal-right">
+        <p class="section-label">About Me</p>
+        <h2 class="section-title" id="about-title">
+          Crafting digital experiences that matter
+        </h2>
+
+        <p class="about-text">
+          I'm a passionate full-stack developer and UI/UX designer with a love for building
+          clean, efficient, and user-centered digital products. From designing pixel-perfect
+          interfaces in Figma to engineering robust backends with Laravel, I enjoy every layer
+          of the stack.
+        </p>
+        <p class="about-text">
+          I've also built AI-powered web applications — including a skin disease detection
+          system — that blend cutting-edge technology with intuitive design to solve real-world
+          problems.
+        </p>
+
+        <div class="about-stats" aria-label="Key stats">
+          <div class="stat-item">
+            <div class="stat-num">10+</div>
+            <div class="stat-lbl">Projects Built</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">5+</div>
+            <div class="stat-lbl">Tech Stacks</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">∞</div>
+            <div class="stat-lbl">Passion Driven</div>
+          </div>
+        </div>
+
+        <div class="about-actions">
+          <a href="projects.html" class="btn btn-primary" id="about-cta-projects">
+            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i> View Projects
+          </a>
+          <a href="#skills" class="btn btn-secondary" id="about-cta-skills">My Skills</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- SKILLS / WHAT I DO SECTION -->
+  <section class="skills" id="skills" aria-labelledby="skills-title">
+    <div class="skills-inner container">
+
+      <div class="skills-header">
+        <p class="section-label reveal">What I Do</p>
+        <h2 class="section-title reveal delay-1" id="skills-title">My Skills &amp; Expertise</h2>
+        <p class="section-desc reveal delay-2">
+          I bring ideas to life across the full spectrum of digital development —
+          from sleek interfaces to powerful backends and intelligent applications.
+        </p>
+      </div>
+
+      <div class="skills-grid" role="list">
+
+        <!-- Card 1: Frontend -->
+        <article class="skill-card reveal delay-1" role="listitem">
+          <div class="skill-icon" aria-hidden="true"><i class="fa-solid fa-code"></i></div>
+          <h3 class="skill-title">Frontend Development</h3>
+          <p class="skill-desc">
+            Building responsive, accessible, and visually stunning web interfaces
+            with modern HTML, CSS, and JavaScript — clean code that looks great on
+            every screen.
+          </p>
+          <div class="skill-tags" aria-label="Technologies">
+            <span class="skill-tag">HTML / CSS</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Responsive</span>
+          </div>
+        </article>
+
+        <!-- Card 2: UI/UX -->
+        <article class="skill-card reveal delay-2" role="listitem">
+          <div class="skill-icon" aria-hidden="true"><i class="fa-solid fa-pen-ruler"></i></div>
+          <h3 class="skill-title">UI / UX Design</h3>
+          <p class="skill-desc">
+            Designing intuitive user experiences and interfaces for web
+            and mobile applications using Figma with
+            design thinking principles.
+          </p>
+          <div class="skill-tags" aria-label="Technologies">
+            <span class="skill-tag">Figma</span>
+            <span class="skill-tag">Prototyping</span>
+            <span class="skill-tag">Design Systems</span>
+          </div>
+        </article>
+
+        <!-- Card 3: Backend -->
+        <article class="skill-card reveal delay-3" role="listitem">
+          <div class="skill-icon" aria-hidden="true"><i class="fa-solid fa-server"></i></div>
+          <h3 class="skill-title">Backend Development</h3>
+          <p class="skill-desc">
+            Engineering robust, scalable server-side solutions and RESTful APIs
+            that power modern web applications — secure, efficient, and maintainable.
+          </p>
+          <div class="skill-tags" aria-label="Technologies">
+            <span class="skill-tag">PHP</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">REST API</span>
+          </div>
+        </article>
+
+        <!-- Card 4: Laravel -->
+        <article class="skill-card reveal delay-2" role="listitem">
+          <div class="skill-icon" aria-hidden="true"><i class="fa-solid fa-layer-group"></i></div>
+          <h3 class="skill-title">Laravel Development</h3>
+          <p class="skill-desc">
+            Building web applications using the Laravel PHP
+            framework — from MVC architecture and Eloquent ORM to authentication
+            and queue systems.
+          </p>
+          <div class="skill-tags" aria-label="Technologies">
+            <span class="skill-tag">Laravel</span>
+            <span class="skill-tag">Blade</span>
+            <span class="skill-tag">Eloquent ORM</span>
+          </div>
+        </article>
+
+        <!-- Card 5: AI -->
+        <article class="skill-card reveal delay-3" role="listitem">
+          <div class="skill-icon" aria-hidden="true"><i class="fa-solid fa-brain"></i></div>
+          <h3 class="skill-title">AI Web Applications</h3>
+          <p class="skill-desc">
+            Integrating machine learning models into practical, user-friendly web
+            applications — including an AI system that detects skin diseases from
+            images in real time.
+          </p>
+          <div class="skill-tags" aria-label="Technologies">
+            <span class="skill-tag">AI / ML</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Web Integration</span>
+          </div>
+        </article>
+
+        <!-- Card 6: Mobile Design -->
+        <article class="skill-card reveal delay-4" role="listitem">
+          <div class="skill-icon" aria-hidden="true"><i class="fa-solid fa-mobile-screen"></i></div>
+          <h3 class="skill-title">Mobile App Design</h3>
+          <p class="skill-desc">
+            Crafting complete mobile application design systems — from wireframes
+            to high-fidelity interactive Figma prototypes — with a focus on
+            platform-specific UX patterns and accessibility.
+          </p>
+          <div class="skill-tags" aria-label="Technologies">
+            <span class="skill-tag">Mobile UI</span>
+            <span class="skill-tag">Figma</span>
+            <span class="skill-tag">Interaction Design</span>
+          </div>
+        </article>
+
+      </div><!-- /skills-grid -->
+    </div>
+  </section>
+
+
+  <!-- ORGANIZATION & EXPERIENCE SECTION -->
+  <section class="experience" id="experience" aria-labelledby="experience-title">
+    <div class="experience-inner container">
+
+      <div class="experience-header">
+        <p class="section-label reveal">Leadership &amp; Leadership Roles</p>
+        <h2 class="section-title reveal delay-1" id="experience-title">Organization &amp; Volunteer Experience</h2>
+        <p class="section-desc reveal delay-2">
+          Active participation in campus organizations, committees, and technology communities demonstrating leadership,
+          teamwork, and project execution.
+        </p>
+      </div>
+
+      <div class="timeline" role="list">
+
+        <!-- Experience Item 1 (Edit details below) -->
+        <article class="timeline-item reveal delay-1" role="listitem">
+          <div class="timeline-marker" aria-hidden="true">
+            <i class="fa-solid fa-users"></i>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <span class="timeline-role">Activist Member</span>
+                <h3 class="timeline-org">Teach for Indonesia Student Community</h3>
+              </div>
+              <span class="timeline-period"><i class="fa-regular fa-calendar" aria-hidden="true"></i> 2026 – 2027</span>
+            </div>
+            <p class="timeline-desc">
+              Managed end-to-end logistics and operational supplies for environmental community projects, ensuring
+              seamless equipment delivery and site execution for tree-planting initiatives.
+            </p>
+            <ul class="timeline-bullets">
+              <li>Logistics & Supply Management: Managed inventory, transportation, and distribution of event equipment
+                and tree-planting materials for the "Seeds of Change" environmental campaign along the Cikapundung
+                River.</li>
+              <li>On-Site Operational Support: Ensured 100% availability and proper check-in/check-out of essential
+                tools
+                and supplies during live event operations.</li>
+              <li>Team Coordination: Collaborated with cross-functional committee members to streamline workflow,
+                equipment setup, and post-event inventory audits.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="timeline-tag">Coordination</span>
+              <span class="timeline-tag">Event Operation</span>
+              <span class="timeline-tag">Teamwork</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Experience Item 2 (Edit details below) -->
+        <article class="timeline-item reveal delay-2" role="listitem">
+          <div class="timeline-marker" aria-hidden="true">
+            <i class="fa-solid fa-laptop-code"></i>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <span class="timeline-role">Youth Organization Leader</span>
+                <h3 class="timeline-org">Rekriwa</h3>
+              </div>
+              <span class="timeline-period"><i class="fa-regular fa-calendar" aria-hidden="true"></i> 2023 – 2024</span>
+            </div>
+            <p class="timeline-desc">
+              Led youth community operations, oversaw annual program planning, and managed end-to-end execution of major
+              community celebrations while fostering active team engagement and collaboration.
+            </p>
+            <ul class="timeline-bullets">
+              <li>Leadership & Management: Spearheaded organizational operations and led a team of committee members in
+                planning and executing annual youth programs, including major Christmas and Easter events.</li>
+              <li>Event Planning & Execution: Directed cross-functional teams across logistics, program, and media
+                divisions to deliver smooth and engaging events.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="timeline-tag">Leadership</span>
+              <span class="timeline-tag">Project Management</span>
+              <span class="timeline-tag">Event Planning</span>
+              <span class="timeline-tag">Team Building</span>
+            </div>
+          </div>
+        </article>
+
+      </div><!-- /timeline -->
+
+    </div>
+  </section>
+
+
+  <!-- CERTIFICATIONS & CERTIFICATES SECTION -->
+  <section class="certifications" id="certifications" aria-labelledby="certifications-title">
+    <div class="certifications-inner container">
+
+      <div class="certifications-header">
+        <p class="section-label reveal">Verified Credentials</p>
+        <h2 class="section-title reveal delay-1" id="certifications-title">Certifications &amp; Certificates</h2>
+        <p class="section-desc reveal delay-2">
+          Recognized accomplishments and professional certifications validating skills in UI/UX Design, Frontend
+          Development, and Technical Competencies.
+        </p>
+      </div>
+
+      <div class="certifications-grid" role="list">
+
+        <!-- 1. UI/UX Certification -->
+        <article class="cert-card reveal delay-1" role="listitem">
+          <div class="cert-badge-top" aria-hidden="true">
+            <i class="fa-solid fa-ribbon"></i>
+          </div>
+          <div class="cert-header-content">
+            <div class="cert-icon" aria-hidden="true">
+              <i class="fa-solid fa-pen-nib"></i>
+            </div>
+            <div class="cert-meta">
+              <span class="cert-category">UI / UX Design</span>
+              <h3 class="cert-title">UI / UX Design Certification</h3>
+              <p class="cert-issuer">Issued to Albert Jonathan Aditya Nugroho</p>
+            </div>
+          </div>
+          <p class="cert-desc">
+            Professional certification demonstrating proficiency in user interface design, user experience research,
+            design systems, wireframing, and interactive prototyping in Figma.
+          </p>
+          <div class="cert-tags">
+            <span class="cert-tag">UI/UX</span>
+            <span class="cert-tag">Figma</span>
+            <span class="cert-tag">Prototyping</span>
+            <span class="cert-tag">User Research</span>
+          </div>
+          <div class="cert-actions">
+            <button class="btn btn-primary btn-sm open-cert-modal" data-pdf="Certificate/UIUX - Albert Jonathan Aditya N.pdf"
+              data-title="UI / UX Design Certification">
+              <i class="fa-solid fa-eye" aria-hidden="true"></i> Preview
+            </button>
+          </div>
+        </article>
+
+        <!-- 2. Frontend Development Certification -->
+        <article class="cert-card reveal delay-2" role="listitem">
+          <div class="cert-badge-top" aria-hidden="true">
+            <i class="fa-solid fa-ribbon"></i>
+          </div>
+          <div class="cert-header-content">
+            <div class="cert-icon" aria-hidden="true">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <div class="cert-meta">
+              <span class="cert-category">Frontend Development</span>
+              <h3 class="cert-title">Frontend Engineering Certification</h3>
+              <p class="cert-issuer">Issued to Albert Jonathan Aditya Nugroho</p>
+            </div>
+          </div>
+          <p class="cert-desc">
+            Certification validating core frontend web development skills including HTML5, CSS3, JavaScript ES6+,
+            responsive design techniques, and web performance optimization.
+          </p>
+          <div class="cert-tags">
+            <span class="cert-tag">Frontend</span>
+            <span class="cert-tag">HTML / CSS</span>
+            <span class="cert-tag">JavaScript</span>
+            <span class="cert-tag">Web Dev</span>
+          </div>
+          <div class="cert-actions">
+            <button class="btn btn-primary btn-sm open-cert-modal" data-pdf="Certificate/FE - Albert Jonathan Aditya N.pdf"
+              data-title="Frontend Engineering Certification">
+              <i class="fa-solid fa-eye" aria-hidden="true"></i> Preview
+            </button>
+          </div>
+        </article>
+
+        <!-- 3. Certification ID: Cert7408384244 -->
+        <article class="cert-card reveal delay-3" role="listitem">
+          <div class="cert-badge-top" aria-hidden="true">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <div class="cert-header-content">
+            <div class="cert-icon" aria-hidden="true">
+              <i class="fa-solid fa-certificate"></i>
+            </div>
+            <div class="cert-meta">
+              <span class="cert-category">Professional Competency</span>
+              <h3 class="cert-title">Certified Specialist (Ref: 7408384244)</h3>
+              <p class="cert-issuer">Verified Certificate ID: 7408384244</p>
+            </div>
+          </div>
+          <p class="cert-desc">
+            Official technical certification verifying specialized mastery in engineering workflows, system architecture
+            standards, and application development benchmarks.
+          </p>
+          <div class="cert-tags">
+            <span class="cert-tag">Credential #7408384244</span>
+            <span class="cert-tag">Verified</span>
+            <span class="cert-tag">Technical Competency</span>
+          </div>
+          <div class="cert-actions">
+            <button class="btn btn-primary btn-sm open-cert-modal" data-pdf="Certification/Cert7408384244.pdf"
+              data-title="Certified Specialist (Ref: 7408384244)">
+              <i class="fa-solid fa-eye" aria-hidden="true"></i> Preview
+            </button>
+          </div>
+        </article>
+
+        <!-- 4. ICISS 2026 E-Certificate -->
+        <article class="cert-card reveal delay-1" role="listitem">
+          <div class="cert-badge-top" aria-hidden="true">
+            <i class="fa-solid fa-award"></i>
+          </div>
+          <div class="cert-header-content">
+            <div class="cert-icon" aria-hidden="true">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <div class="cert-meta">
+              <span class="cert-category">Conference Certificate</span>
+              <h3 class="cert-title">ICISS 2026 International Conference</h3>
+              <p class="cert-issuer">ICISS Conference</p>
+            </div>
+          </div>
+          <p class="cert-desc">
+            Certificate of Participation / Presentation at the International Conference on Information Systems and
+            Security (ICISS 2026).
+          </p>
+          <div class="cert-tags">
+            <span class="cert-tag">Conference</span>
+            <span class="cert-tag">ICISS 2026</span>
+            <span class="cert-tag">Research & Security</span>
+          </div>
+          <div class="cert-actions">
+            <button class="btn btn-primary btn-sm open-cert-modal" data-pdf="Certificate/ICISS 2026 - -189.pdf"
+              data-title="ICISS 2026 International Conference Certificate">
+              <i class="fa-solid fa-eye" aria-hidden="true"></i> Preview
+            </button>
+          </div>
+        </article>
+
+        <!-- 5. QUT Uncovered E-Certificate -->
+        <article class="cert-card reveal delay-2" role="listitem">
+          <div class="cert-badge-top" aria-hidden="true">
+            <i class="fa-solid fa-award"></i>
+          </div>
+          <div class="cert-header-content">
+            <div class="cert-icon" aria-hidden="true">
+              <i class="fa-solid fa-globe"></i>
+            </div>
+            <div class="cert-meta">
+              <span class="cert-category">Global Seminar</span>
+              <h3 class="cert-title">QUT Uncovered Certificate</h3>
+              <p class="cert-issuer">Queensland University of Technology</p>
+            </div>
+          </div>
+          <p class="cert-desc">
+            E-certificate of completion for QUT Uncovered — What You Really Need to Know international educational
+            program.
+          </p>
+          <div class="cert-tags">
+            <span class="cert-tag">QUT</span>
+            <span class="cert-tag">International Seminar</span>
+            <span class="cert-tag">Education</span>
+          </div>
+          <div class="cert-actions">
+            <button class="btn btn-primary btn-sm open-cert-modal"
+              data-pdf="Certificate/[A-Z] E-certificate_QUT Uncovered - What You Really Need to Know.pdf"
+              data-title="QUT Uncovered Certificate">
+              <i class="fa-solid fa-eye" aria-hidden="true"></i> Preview
+            </button>
+          </div>
+        </article>
+
+        <!-- 6. Seminar Nasional - The Next Creator -->
+        <article class="cert-card reveal delay-3" role="listitem">
+          <div class="cert-badge-top" aria-hidden="true">
+            <i class="fa-solid fa-award"></i>
+          </div>
+          <div class="cert-header-content">
+            <div class="cert-icon" aria-hidden="true">
+              <i class="fa-solid fa-lightbulb"></i>
+            </div>
+            <div class="cert-meta">
+              <span class="cert-category">National Seminar</span>
+              <h3 class="cert-title">The Next Creator Seminar</h3>
+              <p class="cert-issuer">Seminar Nasional 2024</p>
+            </div>
+          </div>
+          <p class="cert-desc">
+            National Seminar E-Certificate for "The Next Creator" covering digital creation, technology trends, and
+            modern innovation.
+          </p>
+          <div class="cert-tags">
+            <span class="cert-tag">Seminar Nasional</span>
+            <span class="cert-tag">Digital Creation</span>
+            <span class="cert-tag">Technology</span>
+          </div>
+          <div class="cert-actions">
+            <button class="btn btn-primary btn-sm open-cert-modal"
+              data-pdf="Certificate/[E-Certificate Seminar Nasional] The Next Creator - 5 Oct 2024-313.pdf"
+              data-title="The Next Creator National Seminar Certificate">
+              <i class="fa-solid fa-eye" aria-hidden="true"></i> Preview
+            </button>
+          </div>
+        </article>
+
+      </div><!-- /certifications-grid -->
+    </div>
+  </section>
+
+
+  <!-- CERTIFICATE PREVIEW MODAL -->
+  <div class="cert-modal-backdrop" id="certModal" aria-hidden="true" role="dialog" aria-labelledby="modalTitle">
+    <div class="cert-modal-container">
+      <div class="cert-modal-header">
+        <h3 class="cert-modal-title" id="modalTitle">Certificate Preview</h3>
+        <button class="cert-modal-close" id="closeCertModal" aria-label="Close certificate preview">&times;</button>
+      </div>
+      <div class="cert-modal-body">
+        <iframe id="certFrame" src="about:blank" title="Certificate PDF Viewer"></iframe>
+      </div>
+      <div class="cert-modal-footer">
+        <a id="certModalOpenNew" href="#" target="_blank" class="btn btn-primary btn-sm">
+          <i class="fa-solid fa-up-right-from-square"></i> Open in New Tab
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <!--
+ FOOTER
+  -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-inner">
+      <a href="index.html" class="footer-logo" aria-label="Home">Albert Jonathan Aditya Nugroho<span>.</span></a>
+      <p class="footer-copy">© 2026 Albert Jonathan Aditya Nugroho. All rights reserved.</p>
+      <nav class="footer-links" aria-label="Footer links">
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+        <a href="https://github.com/bebret" target="_blank" rel="noopener noreferrer"
+          aria-label="GitHub profile">GitHub</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
