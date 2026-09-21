@@ -1018,6 +1018,12 @@ button {
   pointer-events: auto;
 }
 
+.project-preview-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /* If an iframe is present, hide placeholder and overlay so user can interact directly */
 .project-preview:has(iframe) .project-preview-placeholder,
 .project-preview:has(iframe) .project-preview-overlay {
