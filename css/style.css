@@ -1714,6 +1714,13 @@ button {
   font-size: 0.82rem;
 }
 
+.credly-badge {
+  display: flex;
+  justify-content: center;
+  min-height: 270px;
+  margin-top: 0.5rem;
+}
+
 /* ============================================
    CERTIFICATE MODAL
    ============================================ */
