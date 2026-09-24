@@ -177,7 +177,7 @@ function initProjectFilter() {
 
       // Show / hide cards and toggle wide layout for figma/uiux projects
       cards.forEach(card => {
-        const categories = card.dataset.category || '';
+        const categories = (card.dataset.category || '').split(/\s+/).filter(Boolean);
         const visible = filter === 'all' || categories.includes(filter);
         card.classList.toggle('hidden', !visible);
 
